@@ -1,0 +1,229 @@
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#imgLogo{
+    width: 50px;
+    height: 50px;
+}
+a{
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(81, 178, 243);
+    height: 8vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(81, 178, 243);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+
+
+
+.sobre{
+    text-align: center;
+    padding: 2px;
+}
+
+#imgSobre{
+    border-radius: 500px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.pSobre{
+    width: 80%;
+    padding-top: 5px;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(81, 178, 243);
+    color: #FFF;
+}
+
+
+
+.contato{
+        height: 100%;
+}
+
+
+.title{
+    text-align: center;
+    padding: 3vw;
+    position: relative;
+}
+
+.esq{
+    width: 38%;
+        display: inline-block;
+        text-align: center;
+        min-width:40vw;
+}
+
+.dir{
+    width: 38%;
+    display: inline-block;
+    text-align: center;
+    min-width:40vw;
+    float:right;
+}
+
+
+.map{
+    width: 100%;
+}
+
+
+.servicos{
+    text-align: center;
+}
+
+#button{
+    margin: 5px;
+}
+
+.cards{
+    margin-top: 15px;
+}
+
+#cardMagic{
+    display: block;
+}
+
+#cardMagic2{
+    display: none;
+}
+
+#cardMagic3{
+    display: none;
+}
+
+.carrousel{
+    text-align:center;
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+.carrousel img{
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 174, 255);
+}
+
+#img2{
+    display: none;
+}
+#img3{
+    display: none;
+}
+
+#imgSlide{
+    height: 600px;
+}
+
+.d-block{
+    height: 800px;
+}
+
+#btnColor{
+    background-color: rgb(81, 178, 243);
+    color: aliceblue;
+}
+
+#btnColor:hover{
+    background-color: rgb(52, 155, 224);
+}

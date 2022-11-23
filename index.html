@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./css/styleUn.css">
+
+    <link rel="icon" type="imagem/png" href="./img/logo.png" />
+
+    <!-- LINKS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Coworking Pre Eustaquio</title>
+</head>
+
+<body onload="MudarIntegrante()">
+
+    <header>
+
+      <nav>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="Logo Coworking" id="imgLogo"></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#" style="color: #fff; text-decoration: none; transition: 0.3s">Inicio</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none; transition: 0.3s">Projto</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none; transition: 0.3s">Sobre</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none; transition: 0.3s">Contatos</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+
+      <div class="carrousel">
+
+          <img class="img-fluid" id="integranteFoto" alt="Imagem responsiva">
+
+      </div>
+  
+
+
+        <div class="sobre" id="sobre">
+            <h3>Sobre</h3>
+            <img src="./img/imgCowork.png" class="img-fluid" id="imgSobre" alt="Imagem responsiva">
+            <h5>CoWorking pra você</h5>
+            <p class="pSobre">Chegou a sua chance de ter um lugar confortável e estrutura completa para trabalhar e interagir com outros profissionais, das mais diversas áreas!
+
+                Os escritórios compartilhados trazem consigo uma proposta completamente diferente daquela ligada ao ambiente de trabalho tradicional.
+                
+                Acompanhando as tendências das relações modernas de trabalho na qual freelancing e start-ups se mostram mais fortes e presentes do que nunca, a estação de escritório é formada por um espaço no qual profissionais de diversas áreas trabalham lado a lado em mesas compartilhadas ou separadas. Ele surge como uma alternativa bem-vinda para quem valoriza a liberdade criativa, deseja manter o foco e a concentração, mas também não que abrir mão de uma rotina de trabalho colaborativa em que há trocas constantes de experiências e conhecimentos.</p>
+        </div>
+
+        <div class="servicos" id="servicos">
+            <h3>Serviços</h3>
+
+            <button type="button" class="btn btn-outline-info" id="button" onclick="card1()">Economia</button>
+            <button type="button" class="btn btn-outline-info" id="button" onclick="card2()">Sugestões de Uso</button>
+            <button type="button" class="btn btn-outline-info" id="button" onclick="card3()">Apresentação</button>
+
+            <div class="cards">
+
+                <div class="card" style="width: 18rem;" id="cardMagic">
+                    <img src="./img/CardEconomia.png" class="card-img-top" alt="Imagem de um escritório para reuniões">
+                    <div class="card-body">
+                      <h5 class="card-title">Economize</h5>
+                      <p class="card-text">Sem depósito caução e/ou fiador. <br> Basta firmarmos o contrato de locação,  por tempo determinado, <br> e começar a utilizar as nossas estruturas.</p>
+                      <a href="#" class="btn" id="btnColor">Veja mais</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="cardMagic2">
+                    <img src="./img/CardSugestaoUso.png" class="card-img-top" alt="Imagem de um escritório para reuniões">
+                    <div class="card-body">
+                      <h5 class="card-title">CONFORTO E SEGURANÇA</h5>
+                      <p class="card-text">Nossas salas comerciais podem ser alugadas por hora, por tempo determinado (projeto) ou tempo integral. <br>
+                        Internet Banda Larga de alta velocidade inclusa na prestação de serviços.</p>
+                      <a href="#" class="btn" id="btnColor">Veja mais</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="cardMagic3">
+                    <img src="./img/CardApresentacao.png" class="card-img-top" alt="Imagem de um escritório para reuniões">
+                    <div class="card-body">
+                      <h5 class="card-title">APRESENTAÇÃO</h5>
+                      <p class="card-text">Salas multimídia, mobiliadas e prontas para a sua utilização.<br>
+                        Venha nos conhecer!</p>
+                      <a href="#" class="btn" id="btnColor">Veja mais</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contato" id="contato">
+
+            <div class="title"> <h3>Contatos</h3> </div>
+            
+            <div class="esq">
+                <p>Avenida Pedro II, 3973, Padre Eustáquio, <br> Belo Horizonte, Minas Gerais, <br> Sala 201</p>
+                <p>31 3243-0967</p>
+                <p>email.email@email.com</p>
+                <p>Segunda a sexta, 08:00 às 18:00 <br> Sábado apenas com agendamento</p>
+                
+            </div>
+            <div class="dir">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escreva o Email">
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva a Mensagem aqui"></textarea>
+                </div>
+                <button type="button" class="btn" id="btnColor">Enviar</button>
+            </div>
+
+        </div>
+
+        <div class="mapa">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2736166698905!2d-43.98266717448113!3d-19.912871400083958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697214a1d6bdf%3A0xc80da7f22425ce06!2sAv.%20Dom%20Pedro%20II%2C%203973%20-%20Jardim%20Montanh%C3%AAs%2C%20Belo%20Horizonte%20-%20MG%2C%2030810-190!5e0!3m2!1spt-BR!2sbr!4v1668092991735!5m2!1spt-BR!2sbr" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container px-4 text-center">
+            <div class="row gx-5" style="padding: 40px;">
+              <div class="col">
+               <h3>Contato:</h3>
+               <p>31 3243-0967</p>
+               <p>Email@email.com</p>
+              </div>
+              <div class="col">
+                <h3>Endereço:</h3>
+                <p>Av. Dom Pedro II - Carlos Prates, Belo Horizonte - MG, 30720-272</p>
+                <p>Número 3973</p>
+              </div>
+            </div>
+          </div>
+    </footer>
+  
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./javaScript/cards.js"></script>
+    <script src="./javaScript/carrousel.js" defer></script>
+    <script>   
+      window.onload = function() {
+          MudarIntegrante();
+      };
+    </script>
+    <script src="./javaScript/menu.js"></script>
+
+</body>
+</html>
